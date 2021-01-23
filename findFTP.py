@@ -2,14 +2,18 @@
 import socket
 import re
 import sys
-print "    _________   ____________  ____________________  __"
-print "   / ____/   | / ____/  _/ / /_  __/ ____/ ____/ / / /"
-print "  / /_  / /| |/ /    / // /   / / / __/ / /   / /_/ / "
-print " / __/ / ___ / /____/ // /___/ / / /___/ /___/ __  /  "
-print "/_/   /_/  |_\____/___/_____/_/ /_____/\____/_/ /_/   "
-print "                                                      "
-print " Autor: Eduardo Amaral ";
-print " Youtube: youtube.com/faciltech"
+banner = '''
+    _________   ____________  ____________________  __
+   / ____/   | / ____/  _/ / /_  __/ ____/ ____/ / / /
+  / /_  / /| |/ /    / // /   / / / __/ / /   / /_/ /
+ / __/ / ___ / /____/ // /___/ / / /___/ /___/ __  /
+/_/   /_/  |_\____/___/_____/_/ /_____/\____/_/ /_/
+Autor: Eduardo Amaral - eduardo4maral@protonmail.com
+You Tube : https://www.youtube.com/faciltech
+github   : https://github.com/Amaroca
+Facebook : https://www.facebook.com/faciltech123
+'''
+print(banner)
 if len(sys.argv) < 3:
 	print "Use python findFTP.py 127.0.0.1 usuario"
 	sys.exit(0)
