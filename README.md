@@ -58,7 +58,7 @@ Você irá digitar ```./findFTP.py```
 1. Caso não seja setado um alvo, ou seja um ip/dominio, será apresentado a mensagem acima, indicando o modo padrão de uso.
 
 2.  É necessário fazer uso de um domino/IP e um usuário
-
+ ```python findFTP.py 127.0.0.1 usuario```
 3.  Dessa forma será testado uma wordlist padrão com varias senhas.
 
 4.  Quando encontrar a senha, será mostrado na tela senha encontrada.
