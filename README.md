@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  FTP - Descobrindo password de servidor FTP
+  findFTP - Descobrindo password de servidor FTP
 </h1>
 
 A ideia nesse script simples é utilizando uma wordlist simples composta de senhas, fazer uma brute force apartir de um usuário setado.
@@ -19,78 +19,53 @@ A ideia nesse script simples é utilizando uma wordlist simples composta de senh
     <li><a href="https://github.com/en-wl/wordlist">En-wl</a></li>
     <li><a href="https://github.com/kennyn510/wpa2-wordlists">Kennyn510</a></li>
   </ul>
-1.  **Como utilizar o script.**
+1.  **Como instalar?**
 
-    Navigate into your new site’s directory and start it up.
+    Navegue dentro de seu sistema, escolha o local e execute no terminal o comando abaixo.
 
-    ```shell
-    cd my-blog-starter/
-    gatsby develop
-    ```
+    ``` git clone https://github.com/faciltech/findFTP.git
+        Cloning into 'findFTP'...
+        remote: Enumerating objects: 10, done.
+        remote: Counting objects: 100% (10/10), done.
+        remote: Compressing objects: 100% (10/10), done.
+        remote: Total 10 (delta 1), reused 0 (delta 0), pack-reused 0
+        Receiving objects: 100% (10/10), 19.14 KiB | 612.00 KiB/s, done.
+        Resolving deltas: 100% (1/1), done.
+      ```
 
-1.  **Open the source code and start editing!**
+2.  **Conceda permissão para o arquivo!**
+```
+chmod +x findFTP.py
+```
 
-    Your site is now running at `http://localhost:8000`!
+## 🧐 Como usar o script?
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+Você irá digitar ```./findFTP.py``` 
+   ```
+        _________   ____________  ____________________  __
+       / ____/   | / ____/  _/ / /_  __/ ____/ ____/ / / /
+      / /_  / /| |/ /    / // /   / / / __/ / /   / /_/ /
+     / __/ / ___ / /____/ // /___/ / / /___/ /___/ __  /
+    /_/   /_/  |_\____/___/_____/_/ /_____/\____/_/ /_/
+    Autor: Eduardo Amaral - eduardo4maral@protonmail.com
+    You Tube : https://www.youtube.com/faciltech
+    github   : https://github.com/faciltech
+    Facebook : https://www.facebook.com/faciltech123
 
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Use python findFTP.py 127.0.0.1 usuario
+  ```
 
-## 🧐 What's inside?
+1. Caso não seja setado um alvo, ou seja um ip/dominio, será apresentado a mensagem acima, indicando o modo padrão de uso.
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+2.  É necessário fazer uso de um domino/IP e um usuário
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+3.  Dessa forma será testado uma wordlist padrão com varias senhas.
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+4.  Quando encontrar a senha, será mostrado na tela senha encontrada.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+## 🎓 Linguagem
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-blog)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-blog)
+O utilitário é desenvolvido em linguagem python, fazendo uso de poucas bibliotecas, e fazendo uso de SOCK, sendo assim, causa menos ruídos que outras ferramentas.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
